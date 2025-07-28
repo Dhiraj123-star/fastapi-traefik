@@ -30,7 +30,7 @@ jobs:
       - name: 📦 Build and Push Docker image
         uses: docker/build-push-action@v5
         with:
-          context: .
-          file: ./Dockerfile
+          context: ./app
+          file: ./app/Dockerfile
           push: true
           tags: dhiraj918106/fastapi-traefik:latest
