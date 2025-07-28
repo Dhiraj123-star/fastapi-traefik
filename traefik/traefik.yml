@@ -2,6 +2,9 @@ entryPoints:
   web:
     address: ":80"
 
+  websecure:
+    address: ":443"
+
 api:
   dashboard: true
   insecure: true
@@ -9,3 +12,8 @@ api:
 providers:
   docker:
     exposedByDefault: false
+
+tls:
+  certificates:
+    - certFile: "/certs/server.crt"
+      keyFile: "/certs/server.key"
