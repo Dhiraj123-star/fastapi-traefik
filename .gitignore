@@ -1,0 +1,3 @@
+# Ignore TLS certificates
+traefik/certs/*.crt
+traefik/certs/*.key
